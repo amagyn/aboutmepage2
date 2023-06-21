@@ -1,0 +1,78 @@
+.calendar {
+    width: 60%;
+    height: 70vh;
+    margin-top: 10rem
+}
+
+.week {
+    display: flex;
+    border: 2px solid black;
+    height: 10vh;
+}
+
+.day_wrapper {
+display: flex;
+align-items: center;
+}
+
+.dayname {
+    border: 2px black solid;
+    height: 5vh;
+    width: 14.3%;
+    display: inline-block;
+    flex-direction: row;
+    
+}
+
+.dayname::before {
+    content: attr(dayname);
+    display: flex;
+    font-size:large;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.day {
+    border: 2px black solid;
+    height: 10vh;
+    width: 14.3%;
+}
+
+
+.day::before {
+ content: attr(day);
+ display: flex;
+ height: 20px;
+ width: 20px;
+ border: black 1px solid;
+}
+
+.day::after {
+content: attr(weekend);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@media screen and (min-width: 700px) and (max-width: 1250px){
+
+    .day {
+        border: 2px pink;
+        height: 10vh;
+        width: 12.3%;
+    }
+     
+    .week {
+        display: flex;
+        border: 2px solid pink;
+        height: 10vh;
+    }
+
+    .calendar {
+        border: 2px solid palevioletred;
+        width: 40%;
+        height: 70vh;
+        margin-top: 10rem;
+    }
+}
+/* This is the start of my FinalProject:  */
